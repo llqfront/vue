@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta http-equiv="Cache-Control" content="no-transform"/>
+    <meta name="author" content="新航路教育 - www.xhanglu.com" />
+    <meta name="copyright" content="新航路教育 - www.xhanglu.com" />
+    <title>新航路教育 - www.xhanglu.com</title>
+    <meta name="keywords" content="新航路教育、HTML5、前端开发、HTML5培训"/>
+    <meta name="description" content="新航路教育"/>
+    <link rel="stylesheet" href="/css/index.css"/>
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/sea.js"></script>
+    <script type="text/javascript" src="/js/vue.js"></script>
+    <style>
+        .m {
+            width: 1000px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+<div id="example" class="m">
+    <span>Multiline message is:</span>
+<p>{{ message }}</p>
+<br>
+<textarea v-model="message" placeholder="add multiple lines"></textarea>
+</div>
+<script type="text/javascript">
+    var data = {
+        'message':''
+    };
+    var vm = new Vue({
+        el:'#example',
+        data:data
+    })
+</script>
+</body>
+</html>

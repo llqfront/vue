@@ -1,0 +1,32 @@
+{
+  "host": "172.16.32.2",
+  "user": "web",
+  "password": "webjyt",
+  "projectPath": "demo",
+  "serverDir": "s",
+  "previewServerDir": "page",
+  "cdn": "",
+  "newcdn": "",
+  "outputCustom": "",
+  "build":{
+    "livereload":true,
+    "sass":true,
+    "scss":true,
+    "less":false,
+    "csslint":false,
+    "isEs6":true
+  },
+  "output":{
+    "cssImagesUrlReplace": false,
+    "cssCombo": false,
+    "combineWidgetCss":true,
+    "compressPng":false,
+    "compressCss":true,
+    "cssSprite":true,
+    "compressJs":true,
+    "cssSpriteMargin":5,
+    "imagesSuffix":1,
+    "jsRemove":["console"]
+  },
+  "localServerPort": 8082
+}

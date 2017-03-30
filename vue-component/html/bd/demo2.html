@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta http-equiv="Cache-Control" content="no-transform"/>
+    <meta name="author" content="新航路教育 - www.xhanglu.com" />
+    <meta name="copyright" content="新航路教育 - www.xhanglu.com" />
+    <title>新航路教育 - www.xhanglu.com</title>
+    <meta name="keywords" content="新航路教育、HTML5、前端开发、HTML5培训"/>
+    <meta name="description" content="新航路教育"/>
+    <link rel="stylesheet" href="/css/index.css"/>
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/sea.js"></script>
+    <script type="text/javascript" src="/js/vue.js"></script>
+    <style>
+        .m {
+            width: 1000px;
+            margin: 0 auto;
+        }
+        .class-a {
+            border: 1px solid red;
+        }
+        .class-b {
+            background: blue;
+        }
+        .test-div {
+            font-size: 30px;
+            height: 40px;
+            width: 300px;
+            border: 1px solid pink;
+        }
+        .test-div2 {
+            border: 1px solid red;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="example" class="m">
+    <div class="static" v-bind:class="{ 'class-a': isA, 'class-b': isB }">这是v-bind的class</div>
+
+
+    <div class="static" v-bind:class="{ 'test-div': clb }">这是v-bind的test-div</div>
+
+    <div class="static" v-bind:class="{ 'test-div2': base.isA }">这是v-bind的test-div</div>
+    <input v-model="model.message" placeholder="edit me"> 
+   
+    
+    <input type="button" value="点击" v-on:click="subForm"/>
+</div>
+<script type="text/javascript">
+    
+    var vm = new Vue({
+        el:'#example',
+        data:{
+            isA:true,
+            isB:true,
+            clb:false,
+            base:{
+                isA:true
+            },
+            link:{
+                isA:true
+            },
+            model: {
+                // 复选框需要单独定义一个空数组
+                checkedNames:[]
+            }
+        },
+        methods:{
+            subForm:function(){
+                var _this = this;
+                // this.clb = true;
+                this.base.isA = false
+            }
+        }
+    })
+</script>
+</body>
+</html>
