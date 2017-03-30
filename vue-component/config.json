@@ -13,8 +13,7 @@
     "sass":true,
     "scss":true,
     "less":false,
-    "csslint":false,
-    "isEs6":true
+    "csslint":false
   },
   "output":{
     "cssImagesUrlReplace": false,
