@@ -1,0 +1,32 @@
+body {
+	background: green;
+}
+div {
+	font-size:40px;
+	border:1px solid red;
+}
+ul {
+	li {
+		border:1px solid blue;
+		span {
+			font-size:30px;
+			border:2px solid black;
+		}
+		var {
+			display:block;
+			width:100px;
+			border:1px solid blue;
+			height:100px;
+		}
+	}
+}
+.test {
+	width:54px;
+	height:54px;
+}
+.tst1 {
+	li {
+		width:54px;
+		height:54px;
+	}
+}
